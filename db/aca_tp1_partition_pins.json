@@ -106,6 +106,10 @@
 				{
 					"name" : "m4",
 					"strict" : false
+				},
+				{
+					"name" : "m[0]",
+					"strict" : false
 				}
 			]
 		}
