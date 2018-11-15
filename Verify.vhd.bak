@@ -7,13 +7,12 @@ use ieee.std_logic_textio.all;
 use ieee.numeric_std.all;
 use IEEE.std_logic_unsigned.all;
 
-entity Encoder is 
-	port (m10, m9, m8, m7, m6, m5, m4, m3, m2, m1, m0 : in std_logic;
-			x14, x13, x12, x11, x10, x9, x8, x7, x6, x5, x4, x3, x2, x1, x0 : out std_logic);
-end Encoder;
+entity Decoder is 
+	port (e14, e13, e12, e11, e10, e9, e8, e7, e6, e5, e4, e3, e2, e1, e0: in std_logic;
+			y10, y9, y8, y7, y6, y5, y4, y3, y2, y1, y0 : out std_logic);
+end Decoder;
 
-architecture LogicFunction of Encoder is
-begin
+architecture LogicFunction of Decoder is
 	x0 <= m0;
 	x1 <= m1;
 	x2 <= m2;
@@ -29,4 +28,6 @@ begin
 	x12 <= m0 xor m1 xor m3 xor m4 xor m7 xor m8 xor m10;
 	x13 <= m0 xor m2 xor m3 xor m5 xor m7 xor m9 xor m10;
 	x14 <= m1 xor m2 xor m3 xor m6 xor m8 xor m9 xor m10;
+begin
+	
 end LogicFunction;
