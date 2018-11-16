@@ -1,4 +1,45 @@
-|Encoder
+|HammingCodes
+clk => encoder:enc.clk
+plainValue[0] => encoder:enc.m[0]
+plainValue[1] => encoder:enc.m[1]
+plainValue[2] => encoder:enc.m[2]
+plainValue[3] => encoder:enc.m[3]
+plainValue[4] => encoder:enc.m[4]
+plainValue[5] => encoder:enc.m[5]
+plainValue[6] => encoder:enc.m[6]
+plainValue[7] => encoder:enc.m[7]
+plainValue[8] => encoder:enc.m[8]
+plainValue[9] => encoder:enc.m[9]
+plainValue[10] => encoder:enc.m[10]
+encodedValue[0] <= encoder:enc.x[0]
+encodedValue[1] <= encoder:enc.x[1]
+encodedValue[2] <= encoder:enc.x[2]
+encodedValue[3] <= encoder:enc.x[3]
+encodedValue[4] <= encoder:enc.x[4]
+encodedValue[5] <= encoder:enc.x[5]
+encodedValue[6] <= encoder:enc.x[6]
+encodedValue[7] <= encoder:enc.x[7]
+encodedValue[8] <= encoder:enc.x[8]
+encodedValue[9] <= encoder:enc.x[9]
+encodedValue[10] <= encoder:enc.x[10]
+encodedValue[11] <= encoder:enc.x[11]
+encodedValue[12] <= encoder:enc.x[12]
+encodedValue[13] <= encoder:enc.x[13]
+encodedValue[14] <= encoder:enc.x[14]
+outValue[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+outValue[1] <= outValue[1].DB_MAX_OUTPUT_PORT_TYPE
+outValue[2] <= outValue[2].DB_MAX_OUTPUT_PORT_TYPE
+outValue[3] <= outValue[3].DB_MAX_OUTPUT_PORT_TYPE
+outValue[4] <= outValue[4].DB_MAX_OUTPUT_PORT_TYPE
+outValue[5] <= outValue[5].DB_MAX_OUTPUT_PORT_TYPE
+outValue[6] <= outValue[6].DB_MAX_OUTPUT_PORT_TYPE
+outValue[7] <= outValue[7].DB_MAX_OUTPUT_PORT_TYPE
+outValue[8] <= outValue[8].DB_MAX_OUTPUT_PORT_TYPE
+outValue[9] <= outValue[9].DB_MAX_OUTPUT_PORT_TYPE
+outValue[10] <= outValue[10].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HammingCodes|Encoder:enc
 clk => x_signal[0].CLK
 clk => x_signal[1].CLK
 clk => x_signal[2].CLK

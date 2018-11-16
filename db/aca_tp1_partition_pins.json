@@ -4,91 +4,91 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "x[0]",
+					"name" : "encodedValue[0]",
 					"strict" : false
 				},
 				{
-					"name" : "x[1]",
+					"name" : "encodedValue[1]",
 					"strict" : false
 				},
 				{
-					"name" : "x[2]",
+					"name" : "encodedValue[2]",
 					"strict" : false
 				},
 				{
-					"name" : "x[3]",
+					"name" : "encodedValue[3]",
 					"strict" : false
 				},
 				{
-					"name" : "x[4]",
+					"name" : "encodedValue[4]",
 					"strict" : false
 				},
 				{
-					"name" : "x[5]",
+					"name" : "encodedValue[5]",
 					"strict" : false
 				},
 				{
-					"name" : "x[6]",
+					"name" : "encodedValue[6]",
 					"strict" : false
 				},
 				{
-					"name" : "x[7]",
+					"name" : "encodedValue[7]",
 					"strict" : false
 				},
 				{
-					"name" : "x[8]",
+					"name" : "encodedValue[8]",
 					"strict" : false
 				},
 				{
-					"name" : "x[9]",
+					"name" : "encodedValue[9]",
 					"strict" : false
 				},
 				{
-					"name" : "x[10]",
+					"name" : "encodedValue[10]",
 					"strict" : false
 				},
 				{
-					"name" : "x[11]",
+					"name" : "encodedValue[11]",
 					"strict" : false
 				},
 				{
-					"name" : "x[12]",
+					"name" : "encodedValue[12]",
 					"strict" : false
 				},
 				{
-					"name" : "x[13]",
+					"name" : "encodedValue[13]",
 					"strict" : false
 				},
 				{
-					"name" : "x[14]",
+					"name" : "encodedValue[14]",
 					"strict" : false
 				},
 				{
-					"name" : "m[8]",
+					"name" : "plainValue[8]",
 					"strict" : false
 				},
 				{
-					"name" : "m[3]",
+					"name" : "plainValue[3]",
 					"strict" : false
 				},
 				{
-					"name" : "m[0]",
+					"name" : "plainValue[0]",
 					"strict" : false
 				},
 				{
-					"name" : "m[1]",
+					"name" : "plainValue[1]",
 					"strict" : false
 				},
 				{
-					"name" : "m[2]",
+					"name" : "plainValue[2]",
 					"strict" : false
 				},
 				{
-					"name" : "m[5]",
+					"name" : "plainValue[5]",
 					"strict" : false
 				},
 				{
-					"name" : "m[6]",
+					"name" : "plainValue[6]",
 					"strict" : false
 				},
 				{
@@ -96,19 +96,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "m[4]",
+					"name" : "plainValue[4]",
 					"strict" : false
 				},
 				{
-					"name" : "m[7]",
+					"name" : "plainValue[7]",
 					"strict" : false
 				},
 				{
-					"name" : "m[9]",
+					"name" : "plainValue[9]",
 					"strict" : false
 				},
 				{
-					"name" : "m[10]",
+					"name" : "plainValue[10]",
 					"strict" : false
 				}
 			]
