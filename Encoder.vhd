@@ -8,27 +8,34 @@ use ieee.numeric_std.all;
 use IEEE.std_logic_unsigned.all;
 
 entity Encoder is 
-	port (m10, m9, m8, m7, m6, m5, m4, m3, m2, m1, m0 : in std_logic;
+	port (clk : in std_logic;
 			m : in std_logic_vector(10 downto 0);
-			x : out std_logic_vector(14 downto 0);
-			x14, x13, x12, x11, x10, x9, x8, x7, x6, x5, x4, x3, x2, x1, x0 : out std_logic);
+			x : out std_logic_vector(14 downto 0));
 end Encoder;
 
 architecture LogicFunction of Encoder is
+signal
+	x_signal : std_logic_vector(14 downto 0);
 begin
-	x(0) <= m(0);
-	x(1) <= m(1);
-	x(2) <= m(2);
-	x(3) <= m(3);
-	x(4) <= m(4);
-	x(5) <= m(5);
-	x(6) <= m(6);
-	x(7) <= m(7);
-	x(8) <= m(8);
-	x(9) <= m(9);
-	x(10) <= m(10);
-	x11 <= m0 xor m1 xor m2 xor m4 xor m5 xor m6 xor m10;
-	x12 <= m0 xor m1 xor m3 xor m4 xor m7 xor m8 xor m10;
-	x13 <= m0 xor m2 xor m3 xor m5 xor m7 xor m9 xor m10;
-	x14 <= m1 xor m2 xor m3 xor m6 xor m8 xor m9 xor m10;
+	process(clk)
+	begin
+		if(rising_edge(clk)) then
+			x_signal(14) <= m(10);
+			x_signal(13) <= m(9);
+			x_signal(12) <= m(8);
+			x_signal(11) <= m(7);
+			x_signal(10) <= m(6);
+			x_signal(9) <= m(5);
+			x_signal(8) <= m(4);
+			x_signal(7) <= m(3);
+			x_signal(6) <= m(2);
+			x_signal(5) <= m(1);
+			x_signal(4) <= m(0);
+			x_signal(3) <= (m(0) and '1') xor (m(1) and '1') xor (m(2) and '1') xor (m(4) and '1') xor (m(6) and '1') xor (m(7) and '1') xor (m(10) and '1');
+			x_signal(2) <= (m(0) and '1') xor (m(3) and '1') xor (m(4) and '1') xor (m(5) and '1') xor (m(9) and '1') xor (m(10) and '1');
+			x_signal(1) <= (m(0) and '1') xor (m(1) and '1') xor (m(2) and '1') xor (m(3) and '1') xor (m(4) and '1') xor (m(7) and '1') xor (m(8) and '1') xor (m(9) and '1');
+			x_signal(0) <= (m(0) and '1') xor (m(1) and '1') xor (m(2) and '1') xor (m(3) and '1') xor (m(5) and '1') xor (m(6) and '1') xor (m(8) and '1');
+		end if;
+		x <= x_signal;
+	end process;
 end LogicFunction;

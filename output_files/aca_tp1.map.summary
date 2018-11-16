@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Nov 15 23:19:37 2018
+Analysis & Synthesis Status : Successful - Fri Nov 16 01:27:30 2018
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : aca_tp1
 Top-level Entity Name : Encoder
 Family : Cyclone IV E
-Total logic elements : 6
-    Total combinational functions : 6
-    Dedicated logic registers : 0
-Total registers : 0
-Total pins : 37
+Total logic elements : 19
+    Total combinational functions : 8
+    Dedicated logic registers : 15
+Total registers : 15
+Total pins : 27
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
