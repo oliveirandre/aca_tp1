@@ -1,0 +1,21 @@
+library MyEncoder;
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_textio.all;
+use ieee.numeric_std.all;
+use IEEE.std_logic_unsigned.all;
+
+entity Decoder is 
+	port (e : in std_logic_vector(14 downto 0);
+			y : out std_logic_vector(3 downto 0));
+end Decoder;
+
+architecture LogicFunction of Decoder is
+begin
+	y(0) <= e(0) xor e(1) xor e(2) xor e(4) xor e(5) xor e(6) xor e(10) xor e(11);
+	y(1) <= e(0) xor e(1) xor e(3) xor e(4) xor e(7) xor e(8) xor e(10) xor e(12);
+	y(2) <= e(0) xor e(2) xor e(3) xor e(5) xor e(7) xor e(9) xor e(10) xor e(13);
+	y(3) <= e(1) xor e(2) xor e(3) xor e(6) xor e(8) xor e(9) xor e(10) xor e(14);
+end LogicFunction;

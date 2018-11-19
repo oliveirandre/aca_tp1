@@ -1,0 +1,23 @@
+Quartus Prime Archive log --	/home/pedro/Repositories/aca_tp1/Decoder/Decoder_tmp_archive.qarlog
+
+Archive:	/home/pedro/Repositories/aca_tp1/Decoder/Decoder_tmp_archive.qar
+Date:		Mon Nov 19 19:24:22 2018
+Quartus Prime		17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+/home/pedro/Repositories/aca_tp1/Decoder/Decoder.qpf
+/home/pedro/Repositories/aca_tp1/Decoder/Decoder.vhd
+/home/pedro/Repositories/aca_tp1/Decoder/Encoder.vhd
+/home/pedro/Repositories/aca_tp1/Decoder/HammingCodes.vhd
+/home/pedro/Repositories/aca_tp1/Decoder/aca_tp1.qsf
+/home/pedro/Repositories/aca_tp1/Decoder/aca_tp1_assignment_defaults.qdf
+	======= Total: 6 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Mon Nov 19 19:24:24 2018
+Source archive file:	/home/pedro/Repositories/aca_tp1/Decoder/Decoder_tmp_archive.qar
+Archive was extracted into	/home/pedro/Repositories/aca_tp1/Encoder/
+		 - successfully.

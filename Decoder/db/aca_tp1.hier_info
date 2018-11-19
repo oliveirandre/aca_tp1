@@ -1,0 +1,31 @@
+|Decoder
+y[0] => y0_1.IN0
+y[0] => y0_5.IN0
+y[1] => y0_1.IN1
+y[1] => y1_6.IN0
+y[2] => y2_5.IN0
+y[2] => y2_3.IN0
+y[3] => y3_7.IN0
+y[3] => y2_3.IN1
+y[4] => y4_10.IN0
+y[5] => y2_5.IN1
+y[5] => y0_5.IN1
+y[6] => y6_11.IN0
+y[6] => y1_6.IN1
+y[7] => y3_7.IN1
+y[7] => y7_13.IN0
+y[8] => y8_12.IN0
+y[8] => y8_14.IN0
+y[9] => y9_10.IN0
+y[10] => y4_10.IN1
+y[10] => y9_10.IN1
+y[11] => y6_11.IN1
+y[12] => y8_12.IN1
+y[13] => y7_13.IN1
+y[14] => y8_14.IN1
+e[0] <= e.DB_MAX_OUTPUT_PORT_TYPE
+e[1] <= e.DB_MAX_OUTPUT_PORT_TYPE
+e[2] <= e.DB_MAX_OUTPUT_PORT_TYPE
+e[3] <= e.DB_MAX_OUTPUT_PORT_TYPE
+
+

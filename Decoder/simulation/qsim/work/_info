@@ -1,0 +1,145 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/pedro/Repositories/aca_tp1/Decoder/simulation/qsim
+Edecoder
+Z1 w1542658418
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 cD3@N^MdoDolN5@R6?T[V1
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx8 cyclonev 19 cyclonev_components 0 22 3BCIeZzdIHLCX<;R;K38G3
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z8 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 PQDYM9fR]Wek<A7X8bA8S1
+R0
+Z9 8aca_tp1.vho
+Z10 Faca_tp1.vho
+l0
+L37
+Vc]@m?o3f`]nJJ4F01:_1k3
+!s100 W`a1J8ZG6B;ZXk[J81EiN0
+Z11 OV;C;10.5b;63
+32
+Z12 !s110 1542658419
+!i10b 1
+Z13 !s108 1542658419.000000
+Z14 !s90 -work|work|aca_tp1.vho|
+Z15 !s107 aca_tp1.vho|
+!i113 1
+Z16 o-work work
+Z17 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 7 decoder 0 22 c]@m?o3f`]nJJ4F01:_1k3
+l118
+L66
+VbDg:c4jnNLDbUWV4eh@Aa1
+!s100 Ym3^g8WDE9Wi6gO;QczWN2
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 1
+R16
+R17
+Edecoder_vhd_vec_tst
+Z18 w1542658417
+R6
+R7
+R0
+Z19 8Waveform.vwf.vht
+Z20 FWaveform.vwf.vht
+l0
+L32
+VC=^4;:X@6I^NlgM1f0U]i0
+!s100 m>k];HJ27n3_=ib1k^cL93
+R11
+32
+R12
+!i10b 1
+R13
+Z21 !s90 -work|work|Waveform.vwf.vht|
+Z22 !s107 Waveform.vwf.vht|
+!i113 1
+R16
+R17
+Adecoder_arch
+R6
+R7
+Z23 DEx4 work 19 decoder_vhd_vec_tst 0 22 C=^4;:X@6I^NlgM1f0U]i0
+l45
+L34
+Z24 Vamb_<gd19XojHJXKVnbDU1
+Z25 !s100 hc5lH5RHlAnKEQ?IeLjo11
+R11
+32
+R12
+!i10b 1
+R13
+R21
+R22
+!i113 1
+R16
+R17
+Ehard_block
+Z26 w1542658189
+R2
+Z27 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 e`^h93R^CdmMEVe0e1VU_3
+R4
+R6
+R7
+Z28 DPx10 cycloneive 21 cycloneive_components 0 22 Q;lLU[K?fTJPSa^YaZf>B3
+R0
+R9
+R10
+l0
+L35
+VB]0;STalBkCB1_B4BXQDW2
+!s100 >mXi5[`cD`bFC`UBKA<om3
+R11
+32
+Z29 !s110 1542658190
+!i10b 1
+Z30 !s108 1542658190.000000
+R14
+R15
+!i113 1
+R16
+R17
+Astructure
+R2
+R27
+R4
+R6
+R7
+R28
+DEx4 work 10 hard_block 0 22 B]0;STalBkCB1_B4BXQDW2
+l65
+L51
+Via>5o7W??azG@W@@eFOTF0
+!s100 [5;Wd8QGQ>@2NGoJ1I]Y43
+R11
+32
+R29
+!i10b 1
+R30
+R14
+R15
+!i113 1
+R16
+R17
