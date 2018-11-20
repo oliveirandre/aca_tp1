@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 d/home/pedro/Repositories/aca_tp1/Encoder/simulation/qsim
 Eencoder
-Z1 w1542657055
+Z1 w1542708115
 Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 e`^h93R^CdmMEVe0e1VU_3
 Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
@@ -25,9 +25,9 @@ VWo`MBhSgRfH3CbFA`b]nH2
 !s100 0FoZ<nz6MNSIolH1b09VG0
 Z10 OV;C;10.5b;63
 32
-Z11 !s110 1542657055
+Z11 !s110 1542708116
 !i10b 1
-Z12 !s108 1542657055.000000
+Z12 !s108 1542708116.000000
 Z13 !s90 -work|work|aca_tp1.vho|
 Z14 !s107 aca_tp1.vho|
 !i113 1
@@ -43,8 +43,8 @@ R7
 DEx4 work 7 encoder 0 22 Wo`MBhSgRfH3CbFA`b]nH2
 l166
 L114
-VANE>38^8leF1AR6_R575=0
-!s100 MQWXQHYc`F1RGXo`D;o6O3
+VaN>>ZPf^:J?7X5@Vc96O]2
+!s100 QNfTOT@AO[oX@UI[5zQ@N3
 R10
 32
 R11
@@ -56,7 +56,7 @@ R14
 R15
 R16
 Eencoder_vhd_vec_tst
-Z17 w1542657054
+Z17 w1542708114
 R5
 R6
 R0
@@ -68,29 +68,29 @@ V^0BFAPI>OeC4W]ZBdRWHm1
 !s100 8U`;4;4oMI0YVhIU[md_70
 R10
 32
-Z20 !s110 1542657056
+R11
 !i10b 1
 R12
-Z21 !s90 -work|work|Waveform.vwf.vht|
-Z22 !s107 Waveform.vwf.vht|
+Z20 !s90 -work|work|Waveform.vwf.vht|
+Z21 !s107 Waveform.vwf.vht|
 !i113 1
 R15
 R16
 Aencoder_arch
 R5
 R6
-Z23 DEx4 work 19 encoder_vhd_vec_tst 0 22 ^0BFAPI>OeC4W]ZBdRWHm1
+Z22 DEx4 work 19 encoder_vhd_vec_tst 0 22 ^0BFAPI>OeC4W]ZBdRWHm1
 l45
 L34
-VdLDzm78V7QL2_H3MijUCI1
-!s100 NkJRdRYa;G[G_T4U<hd[k2
+Z23 VdLDzm78V7QL2_H3MijUCI1
+Z24 !s100 NkJRdRYa;G[G_T4U<hd[k2
 R10
 32
-R20
+R11
 !i10b 1
 R12
+R20
 R21
-R22
 !i113 1
 R15
 R16

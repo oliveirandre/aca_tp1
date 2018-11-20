@@ -1,11 +1,11 @@
-Fitter Status : Successful - Mon Nov 19 20:13:16 2018
+Fitter Status : Successful - Tue Nov 20 09:37:39 2018
 Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 Revision Name : aca_tp1
 Top-level Entity Name : Decoder
 Family : Cyclone V
 Device : 5CGXFC7C7F23C8
 Timing Models : Final
-Logic utilization (in ALMs) : 6 / 56,480 ( < 1 % )
+Logic utilization (in ALMs) : 5 / 56,480 ( < 1 % )
 Total registers : 0
 Total pins : 19 / 268 ( 7 % )
 Total virtual pins : 0

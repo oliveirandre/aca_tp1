@@ -3,7 +3,7 @@ $comment
 		vcd file Decoder.msim.vcd -direction
 $end
 $date
-	Mon Nov 19 20:13:39 2018
+	Tue Nov 20 09:38:56 2018
 $end
 $version
 	ModelSim Version 10.5b
@@ -63,44 +63,44 @@ $var wire 1 M ww_e [2] $end
 $var wire 1 N ww_e [1] $end
 $var wire 1 O ww_e [0] $end
 $var wire 1 P \~QUARTUS_CREATED_GND~I_combout\ $end
-$var wire 1 Q \y[11]~input_o\ $end
-$var wire 1 R \y[10]~input_o\ $end
-$var wire 1 S \y[4]~input_o\ $end
-$var wire 1 T \y[0]~input_o\ $end
-$var wire 1 U \y[1]~input_o\ $end
-$var wire 1 V \yA~combout\ $end
-$var wire 1 W \y[6]~input_o\ $end
-$var wire 1 X \y[5]~input_o\ $end
-$var wire 1 Y \y[2]~input_o\ $end
+$var wire 1 Q \y[8]~input_o\ $end
+$var wire 1 R \y[6]~input_o\ $end
+$var wire 1 S \y[13]~input_o\ $end
+$var wire 1 T \y[11]~input_o\ $end
+$var wire 1 U \y[5]~input_o\ $end
+$var wire 1 V \y[4]~input_o\ $end
+$var wire 1 W \y[12]~input_o\ $end
+$var wire 1 X \yB~combout\ $end
+$var wire 1 Y \y[0]~input_o\ $end
 $var wire 1 Z \e~0_combout\ $end
-$var wire 1 [ \y[12]~input_o\ $end
-$var wire 1 \ \y[3]~input_o\ $end
-$var wire 1 ] \y[8]~input_o\ $end
-$var wire 1 ^ \y[7]~input_o\ $end
+$var wire 1 [ \y[1]~input_o\ $end
+$var wire 1 \ \y[14]~input_o\ $end
+$var wire 1 ] \y[7]~input_o\ $end
+$var wire 1 ^ \y[9]~input_o\ $end
 $var wire 1 _ \e~1_combout\ $end
-$var wire 1 ` \y[9]~input_o\ $end
-$var wire 1 a \yB~combout\ $end
-$var wire 1 b \y[13]~input_o\ $end
+$var wire 1 ` \y[2]~input_o\ $end
+$var wire 1 a \y[10]~input_o\ $end
+$var wire 1 b \yA~combout\ $end
 $var wire 1 c \e~2_combout\ $end
-$var wire 1 d \y[14]~input_o\ $end
+$var wire 1 d \y[3]~input_o\ $end
 $var wire 1 e \e~3_combout\ $end
-$var wire 1 f \ALT_INV_y[14]~input_o\ $end
-$var wire 1 g \ALT_INV_y[9]~input_o\ $end
-$var wire 1 h \ALT_INV_y[13]~input_o\ $end
-$var wire 1 i \ALT_INV_y[12]~input_o\ $end
-$var wire 1 j \ALT_INV_y[8]~input_o\ $end
+$var wire 1 f \ALT_INV_y[3]~input_o\ $end
+$var wire 1 g \ALT_INV_y[10]~input_o\ $end
+$var wire 1 h \ALT_INV_y[2]~input_o\ $end
+$var wire 1 i \ALT_INV_y[14]~input_o\ $end
+$var wire 1 j \ALT_INV_y[9]~input_o\ $end
 $var wire 1 k \ALT_INV_y[7]~input_o\ $end
-$var wire 1 l \ALT_INV_y[3]~input_o\ $end
-$var wire 1 m \ALT_INV_y[10]~input_o\ $end
-$var wire 1 n \ALT_INV_y[4]~input_o\ $end
-$var wire 1 o \ALT_INV_y[1]~input_o\ $end
-$var wire 1 p \ALT_INV_y[0]~input_o\ $end
-$var wire 1 q \ALT_INV_y[11]~input_o\ $end
-$var wire 1 r \ALT_INV_y[6]~input_o\ $end
-$var wire 1 s \ALT_INV_y[5]~input_o\ $end
-$var wire 1 t \ALT_INV_y[2]~input_o\ $end
-$var wire 1 u \ALT_INV_yB~combout\ $end
-$var wire 1 v \ALT_INV_yA~combout\ $end
+$var wire 1 l \ALT_INV_y[1]~input_o\ $end
+$var wire 1 m \ALT_INV_y[12]~input_o\ $end
+$var wire 1 n \ALT_INV_y[11]~input_o\ $end
+$var wire 1 o \ALT_INV_y[5]~input_o\ $end
+$var wire 1 p \ALT_INV_y[4]~input_o\ $end
+$var wire 1 q \ALT_INV_y[13]~input_o\ $end
+$var wire 1 r \ALT_INV_y[8]~input_o\ $end
+$var wire 1 s \ALT_INV_y[6]~input_o\ $end
+$var wire 1 t \ALT_INV_y[0]~input_o\ $end
+$var wire 1 u \ALT_INV_yA~combout\ $end
+$var wire 1 v \ALT_INV_yB~combout\ $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -116,18 +116,18 @@ x6
 1;
 1<
 xP
-1Q
-1R
-0S
-1T
+0Q
+0R
+1S
+0T
 1U
 1V
 0W
 0X
-0Y
+1Y
 0Z
 1[
-0\
+1\
 0]
 0^
 0_
@@ -138,50 +138,50 @@ xP
 1d
 0e
 0f
-0g
+1g
 0h
 0i
 1j
 1k
-1l
-0m
+0l
+1m
 1n
 0o
 0p
 0q
 1r
 1s
-1t
-1u
-0v
+0t
+0u
+1v
 1%
 1&
-1'
-1(
-1)
-1*
+0'
+0(
+0)
+0*
 0+
 0,
 0-
-0.
-0/
-00
-01
+1.
+1/
+10
+11
 12
 13
 1=
 1>
-1?
-1@
-1A
-1B
+0?
+0@
+0A
+0B
 0C
 0D
 0E
-0F
-0G
-0H
-0I
+1F
+1G
+1H
+1I
 1J
 1K
 0L

@@ -3,7 +3,7 @@ $comment
 		vcd file Encoder.msim.vcd -direction
 $end
 $date
-	Mon Nov 19 19:50:56 2018
+	Tue Nov 20 10:01:56 2018
 $end
 $version
 	ModelSim Version 10.5b
@@ -91,21 +91,21 @@ $var wire 1 i \x[11]~output_o\ $end
 $var wire 1 j \x[12]~output_o\ $end
 $var wire 1 k \x[13]~output_o\ $end
 $var wire 1 l \x[14]~output_o\ $end
-$var wire 1 m \m[0]~input_o\ $end
-$var wire 1 n \m[1]~input_o\ $end
+$var wire 1 m \m[4]~input_o\ $end
+$var wire 1 n \m[9]~input_o\ $end
 $var wire 1 o \m[2]~input_o\ $end
-$var wire 1 p \m[3]~input_o\ $end
-$var wire 1 q \m[4]~input_o\ $end
-$var wire 1 r \m[5]~input_o\ $end
-$var wire 1 s \m[6]~input_o\ $end
-$var wire 1 t \m[7]~input_o\ $end
-$var wire 1 u \m[8]~input_o\ $end
-$var wire 1 v \m[9]~input_o\ $end
-$var wire 1 w \m[10]~input_o\ $end
-$var wire 1 x \mA~0_combout\ $end
-$var wire 1 y \x~0_combout\ $end
-$var wire 1 z \x~1_combout\ $end
-$var wire 1 { \mB~0_combout\ $end
+$var wire 1 p \m[0]~input_o\ $end
+$var wire 1 q \m[8]~input_o\ $end
+$var wire 1 r \m[1]~input_o\ $end
+$var wire 1 s \m[7]~input_o\ $end
+$var wire 1 t \mB~0_combout\ $end
+$var wire 1 u \x~0_combout\ $end
+$var wire 1 v \m[3]~input_o\ $end
+$var wire 1 w \m[5]~input_o\ $end
+$var wire 1 x \m[10]~input_o\ $end
+$var wire 1 y \x~1_combout\ $end
+$var wire 1 z \m[6]~input_o\ $end
+$var wire 1 { \mA~0_combout\ $end
 $var wire 1 | \x~2_combout\ $end
 $var wire 1 } \x~3_combout\ $end
 $upscope $end
@@ -124,34 +124,34 @@ x=
 1C
 1^
 1_
-0`
-0a
-0b
-0c
+1`
+1a
+1b
+1c
 0d
 0e
 0f
-1g
-1h
-1i
-1j
+0g
+0h
+0i
+0j
 1k
 1l
-1m
+0m
 1n
 0o
-0p
+1p
 0q
-0r
+1r
 0s
 0t
-0u
-1v
-1w
+1u
+0v
+0w
 1x
 1y
-1z
-0{
+0z
+1{
 1|
 1}
 1!
@@ -178,32 +178,32 @@ x=
 1N
 1O
 1P
-1Q
-1R
-1S
-1T
+0Q
+0R
+0S
+0T
 0U
 0V
 0W
-0X
-0Y
-0Z
-0[
+1X
+1Y
+1Z
+1[
 1\
 1]
 1,
 1-
-1.
-1/
-10
-11
+0.
+0/
+00
+01
 02
 03
 04
-05
-06
-07
-08
+15
+16
+17
+18
 19
 1:
 $end
