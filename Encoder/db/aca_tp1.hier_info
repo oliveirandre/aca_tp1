@@ -1,49 +1,193 @@
 |Encoder
-m[0] => m0_6.IN0
-m[0] => m0_1.IN0
+m[0] => xor2to1:xor0_6.a
+m[0] => xor2to1:xor0_1.a
 m[0] => x[4].DATAIN
-m[1] => m0_1.IN1
+m[1] => xor2to1:xor0_1.b
 m[1] => x[5].DATAIN
-m[2] => m2_3.IN0
-m[2] => m2_4.IN0
+m[2] => xor2to1:xor2_3.a
+m[2] => xor2to1:xor2_4.a
 m[2] => x[6].DATAIN
-m[3] => m2_3.IN1
-m[3] => m3_5.IN0
+m[3] => xor2to1:xor2_3.b
+m[3] => xor2to1:xor3_5.a
 m[3] => x[7].DATAIN
-m[4] => m4_5.IN0
-m[4] => m2_4.IN1
+m[4] => xor2to1:xor4_5.a
+m[4] => xor2to1:xor2_4.b
 m[4] => x[8].DATAIN
-m[5] => m4_5.IN1
-m[5] => m3_5.IN1
+m[5] => xor2to1:xor4_5.b
+m[5] => xor2to1:xor3_5.b
 m[5] => x[9].DATAIN
-m[6] => m0_6.IN1
+m[6] => xor2to1:xor0_6.b
 m[6] => x[10].DATAIN
-m[7] => m2_3_7.IN1
-m[7] => m7_8.IN0
+m[7] => xor2to1:xor2_3_7.b
+m[7] => xor2to1:xor7_8.a
 m[7] => x[11].DATAIN
-m[8] => m4_5_8.IN1
-m[8] => m7_8.IN1
+m[8] => xor2to1:xor4_5_8.b
+m[8] => xor2to1:xor7_8.b
 m[8] => x[12].DATAIN
-m[9] => m9_10.IN0
-m[9] => m2_4_9.IN1
+m[9] => xor2to1:xor9_10.a
+m[9] => xor2to1:xor2_4_9.b
 m[9] => x[13].DATAIN
-m[10] => m9_10.IN1
-m[10] => m3_5_10.IN1
+m[10] => xor2to1:xor9_10.b
+m[10] => xor2to1:xor3_5_10.b
 m[10] => x[14].DATAIN
-x[0] <= x.DB_MAX_OUTPUT_PORT_TYPE
-x[1] <= x.DB_MAX_OUTPUT_PORT_TYPE
-x[2] <= x.DB_MAX_OUTPUT_PORT_TYPE
-x[3] <= x.DB_MAX_OUTPUT_PORT_TYPE
-x[4] <= m[0].DB_MAX_OUTPUT_PORT_TYPE
-x[5] <= m[1].DB_MAX_OUTPUT_PORT_TYPE
-x[6] <= m[2].DB_MAX_OUTPUT_PORT_TYPE
-x[7] <= m[3].DB_MAX_OUTPUT_PORT_TYPE
-x[8] <= m[4].DB_MAX_OUTPUT_PORT_TYPE
-x[9] <= m[5].DB_MAX_OUTPUT_PORT_TYPE
-x[10] <= m[6].DB_MAX_OUTPUT_PORT_TYPE
-x[11] <= m[7].DB_MAX_OUTPUT_PORT_TYPE
-x[12] <= m[8].DB_MAX_OUTPUT_PORT_TYPE
-x[13] <= m[9].DB_MAX_OUTPUT_PORT_TYPE
-x[14] <= m[10].DB_MAX_OUTPUT_PORT_TYPE
+x[0] << xor2to1:xor0.o
+x[1] << xor2to1:xor1.o
+x[2] << xor2to1:xor2.o
+x[3] << xor2to1:xor3.o
+x[4] << m[0].DB_MAX_OUTPUT_PORT_TYPE
+x[5] << m[1].DB_MAX_OUTPUT_PORT_TYPE
+x[6] << m[2].DB_MAX_OUTPUT_PORT_TYPE
+x[7] << m[3].DB_MAX_OUTPUT_PORT_TYPE
+x[8] << m[4].DB_MAX_OUTPUT_PORT_TYPE
+x[9] << m[5].DB_MAX_OUTPUT_PORT_TYPE
+x[10] << m[6].DB_MAX_OUTPUT_PORT_TYPE
+x[11] << m[7].DB_MAX_OUTPUT_PORT_TYPE
+x[12] << m[8].DB_MAX_OUTPUT_PORT_TYPE
+x[13] << m[9].DB_MAX_OUTPUT_PORT_TYPE
+x[14] << m[10].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|xor2to1:xor0_6
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|xor2to1:xor9_10
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|xor2to1:xorA
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|xor2to1:xor4_5
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|xor2to1:xor4_5_8
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|xor2to1:xor2_3
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|xor2to1:xor2_3_7
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|xor2to1:xor0_1
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|xor2to1:xor7_8
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|xor2to1:xorB
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|xor2to1:xor3_5
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|xor2to1:xor3_5_10
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|xor2to1:xor2_4
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|xor2to1:xor2_4_9
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|xor2to1:xor3
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|xor2to1:xor2
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|xor2to1:xor1
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Encoder|xor2to1:xor0
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
 
 

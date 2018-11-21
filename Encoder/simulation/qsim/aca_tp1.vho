@@ -1,4 +1,4 @@
--- Copyright (C) 2017  Intel Corporation. All rights reserved.
+-- Copyright (C) 2018  Intel Corporation. All rights reserved.
 -- Your use of Intel Corporation's design tools, logic functions 
 -- and other software and tools, and its AMPP partner logic 
 -- functions, and any output files from any of the foregoing 
@@ -6,18 +6,17 @@
 -- associated documentation or information are expressly subject 
 -- to the terms and conditions of the Intel Program License 
 -- Subscription Agreement, the Intel Quartus Prime License Agreement,
--- the Intel MegaCore Function License Agreement, or other 
--- applicable license agreement, including, without limitation, 
--- that your use is for the sole purpose of programming logic 
--- devices manufactured by Intel and sold by Intel or its 
--- authorized distributors.  Please refer to the applicable 
--- agreement for further details.
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details.
 
 -- VENDOR "Altera"
 -- PROGRAM "Quartus Prime"
--- VERSION "Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition"
+-- VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
--- DATE "11/20/2018 10:01:55"
+-- DATE "11/21/2018 11:44:53"
 
 -- 
 -- Device: Altera EP4CE6E22C6 Package TQFP144
@@ -78,7 +77,7 @@ USE IEEE.STD_LOGIC_1164.ALL;
 ENTITY 	Encoder IS
     PORT (
 	m : IN std_logic_vector(10 DOWNTO 0);
-	x : OUT std_logic_vector(14 DOWNTO 0)
+	x : BUFFER std_logic_vector(14 DOWNTO 0)
 	);
 END Encoder;
 
@@ -145,16 +144,16 @@ SIGNAL \m[0]~input_o\ : std_logic;
 SIGNAL \m[8]~input_o\ : std_logic;
 SIGNAL \m[1]~input_o\ : std_logic;
 SIGNAL \m[7]~input_o\ : std_logic;
-SIGNAL \mB~0_combout\ : std_logic;
-SIGNAL \x~0_combout\ : std_logic;
+SIGNAL \xor0|o~0_combout\ : std_logic;
+SIGNAL \xor0|o~1_combout\ : std_logic;
 SIGNAL \m[3]~input_o\ : std_logic;
 SIGNAL \m[5]~input_o\ : std_logic;
 SIGNAL \m[10]~input_o\ : std_logic;
-SIGNAL \x~1_combout\ : std_logic;
+SIGNAL \xor1|o~0_combout\ : std_logic;
 SIGNAL \m[6]~input_o\ : std_logic;
-SIGNAL \mA~0_combout\ : std_logic;
-SIGNAL \x~2_combout\ : std_logic;
-SIGNAL \x~3_combout\ : std_logic;
+SIGNAL \xor2|o~0_combout\ : std_logic;
+SIGNAL \xor2|o~1_combout\ : std_logic;
+SIGNAL \xor3|o~0_combout\ : std_logic;
 
 COMPONENT hard_block
     PORT (
@@ -184,7 +183,7 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \x~0_combout\,
+	i => \xor0|o~1_combout\,
 	devoe => ww_devoe,
 	o => \x[0]~output_o\);
 
@@ -196,7 +195,7 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \x~1_combout\,
+	i => \xor1|o~0_combout\,
 	devoe => ww_devoe,
 	o => \x[1]~output_o\);
 
@@ -208,7 +207,7 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \x~2_combout\,
+	i => \xor2|o~1_combout\,
 	devoe => ww_devoe,
 	o => \x[2]~output_o\);
 
@@ -220,7 +219,7 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \x~3_combout\,
+	i => \xor3|o~0_combout\,
 	devoe => ww_devoe,
 	o => \x[3]~output_o\);
 
@@ -434,9 +433,9 @@ PORT MAP (
 	o => \m[7]~input_o\);
 
 -- Location: LCCOMB_X11_Y4_N24
-\mB~0\ : cycloneive_lcell_comb
+\xor0|o~0\ : cycloneive_lcell_comb
 -- Equation(s):
--- \mB~0_combout\ = \m[0]~input_o\ $ (\m[8]~input_o\ $ (\m[1]~input_o\ $ (\m[7]~input_o\)))
+-- \xor0|o~0_combout\ = \m[0]~input_o\ $ (\m[8]~input_o\ $ (\m[1]~input_o\ $ (\m[7]~input_o\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -448,12 +447,12 @@ PORT MAP (
 	datab => \m[8]~input_o\,
 	datac => \m[1]~input_o\,
 	datad => \m[7]~input_o\,
-	combout => \mB~0_combout\);
+	combout => \xor0|o~0_combout\);
 
 -- Location: LCCOMB_X11_Y4_N18
-\x~0\ : cycloneive_lcell_comb
+\xor0|o~1\ : cycloneive_lcell_comb
 -- Equation(s):
--- \x~0_combout\ = \m[4]~input_o\ $ (\m[9]~input_o\ $ (\m[2]~input_o\ $ (\mB~0_combout\)))
+-- \xor0|o~1_combout\ = \m[4]~input_o\ $ (\m[9]~input_o\ $ (\m[2]~input_o\ $ (\xor0|o~0_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -464,8 +463,8 @@ PORT MAP (
 	dataa => \m[4]~input_o\,
 	datab => \m[9]~input_o\,
 	datac => \m[2]~input_o\,
-	datad => \mB~0_combout\,
-	combout => \x~0_combout\);
+	datad => \xor0|o~0_combout\,
+	combout => \xor0|o~1_combout\);
 
 -- Location: IOIBUF_X18_Y0_N15
 \m[3]~input\ : cycloneive_io_ibuf
@@ -501,9 +500,9 @@ PORT MAP (
 	o => \m[10]~input_o\);
 
 -- Location: LCCOMB_X11_Y4_N28
-\x~1\ : cycloneive_lcell_comb
+\xor1|o~0\ : cycloneive_lcell_comb
 -- Equation(s):
--- \x~1_combout\ = \m[3]~input_o\ $ (\mB~0_combout\ $ (\m[5]~input_o\ $ (\m[10]~input_o\)))
+-- \xor1|o~0_combout\ = \m[3]~input_o\ $ (\xor0|o~0_combout\ $ (\m[5]~input_o\ $ (\m[10]~input_o\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -512,10 +511,10 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \m[3]~input_o\,
-	datab => \mB~0_combout\,
+	datab => \xor0|o~0_combout\,
 	datac => \m[5]~input_o\,
 	datad => \m[10]~input_o\,
-	combout => \x~1_combout\);
+	combout => \xor1|o~0_combout\);
 
 -- Location: IOIBUF_X13_Y24_N22
 \m[6]~input\ : cycloneive_io_ibuf
@@ -529,9 +528,9 @@ PORT MAP (
 	o => \m[6]~input_o\);
 
 -- Location: LCCOMB_X11_Y4_N6
-\mA~0\ : cycloneive_lcell_comb
+\xor2|o~0\ : cycloneive_lcell_comb
 -- Equation(s):
--- \mA~0_combout\ = \m[0]~input_o\ $ (\m[9]~input_o\ $ (\m[6]~input_o\ $ (\m[10]~input_o\)))
+-- \xor2|o~0_combout\ = \m[0]~input_o\ $ (\m[9]~input_o\ $ (\m[6]~input_o\ $ (\m[10]~input_o\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -543,12 +542,12 @@ PORT MAP (
 	datab => \m[9]~input_o\,
 	datac => \m[6]~input_o\,
 	datad => \m[10]~input_o\,
-	combout => \mA~0_combout\);
+	combout => \xor2|o~0_combout\);
 
 -- Location: LCCOMB_X11_Y4_N8
-\x~2\ : cycloneive_lcell_comb
+\xor2|o~1\ : cycloneive_lcell_comb
 -- Equation(s):
--- \x~2_combout\ = \mA~0_combout\ $ (\m[7]~input_o\ $ (\m[2]~input_o\ $ (\m[3]~input_o\)))
+-- \xor2|o~1_combout\ = \xor2|o~0_combout\ $ (\m[7]~input_o\ $ (\m[2]~input_o\ $ (\m[3]~input_o\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -556,16 +555,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \mA~0_combout\,
+	dataa => \xor2|o~0_combout\,
 	datab => \m[7]~input_o\,
 	datac => \m[2]~input_o\,
 	datad => \m[3]~input_o\,
-	combout => \x~2_combout\);
+	combout => \xor2|o~1_combout\);
 
 -- Location: LCCOMB_X11_Y4_N10
-\x~3\ : cycloneive_lcell_comb
+\xor3|o~0\ : cycloneive_lcell_comb
 -- Equation(s):
--- \x~3_combout\ = \m[4]~input_o\ $ (\m[8]~input_o\ $ (\m[5]~input_o\ $ (\mA~0_combout\)))
+-- \xor3|o~0_combout\ = \m[4]~input_o\ $ (\m[8]~input_o\ $ (\m[5]~input_o\ $ (\xor2|o~0_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -576,8 +575,8 @@ PORT MAP (
 	dataa => \m[4]~input_o\,
 	datab => \m[8]~input_o\,
 	datac => \m[5]~input_o\,
-	datad => \mA~0_combout\,
-	combout => \x~3_combout\);
+	datad => \xor2|o~0_combout\,
+	combout => \xor3|o~0_combout\);
 
 ww_x(0) <= \x[0]~output_o\;
 

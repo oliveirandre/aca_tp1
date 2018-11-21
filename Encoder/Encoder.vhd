@@ -1,4 +1,5 @@
 library myEncoder;
+use myEncoder.all;
 
 library ieee;
 use ieee.std_logic_1164.all;
@@ -12,44 +13,40 @@ entity Encoder is
 			x : out std_logic_vector(14 downto 0));
 end Encoder;
 
-architecture LogicFunction of Encoder is
+architecture Structural of Encoder is
 	signal m0_6, m9_10, mA, m4_5, m4_5_8, m2_3, m2_3_7 : std_logic;
 	signal m0_1, m7_8, mB, m3_5, m3_5_10, m2_4, m2_4_9 : std_logic;
+	
+component xor2to1
+port (a, b : in std_logic;
+		o : out std_logic);
+end component;
+
 begin
+	x(14 downto 4) <= m(10 downto 0);
 	
-	m0_6 <= m(0) xor m(6);
-	m9_10 <= m(9) xor m(10);
-	mA <= m0_6 xor m9_10;
+	xor0_6 : xor2to1 port map(m(0), m(6), m0_6);
+	xor9_10 : xor2to1 port map(m(9), m(10), m9_10);
+	xorA : xor2to1 port map(m0_6, m9_10, mA);
 	
-	m4_5 <= m(4) xor m(5);
-	m4_5_8 <= m4_5 xor m(8);
+	xor4_5 : xor2to1 port map(m(4), m(5), m4_5);
+	xor4_5_8 : xor2to1 port map(m4_5, m(8), m4_5_8);
 	
-	m2_3 <= m(2) xor m(3);
-	m2_3_7 <= m2_3 xor m(7);
+	xor2_3 : xor2to1 port map(m(2), m(3), m2_3);
+	xor2_3_7 : xor2to1 port map(m2_3, m(7), m2_3_7);
 	
-	m0_1 <= m(0) xor m(1);
-	m7_8 <= m(7) xor m(8);
-	mB <= m0_1 xor m7_8;
+	xor0_1 : xor2to1 port map(m(0), m(1), m0_1);
+	xor7_8 : xor2to1 port map(m(7), m(8), m7_8);
+	xorB : xor2to1 port map(m0_1, m7_8, mB);
 	
-	m3_5 <= m(3) xor m(5);
-	m3_5_10 <= m3_5 xor m(10);
+	xor3_5 : xor2to1 port map(m(3), m(5), m3_5);
+	xor3_5_10 : xor2to1 port map(m3_5, m(10), m3_5_10);
 	
-	m2_4 <= m(2) xor m(4);
-	m2_4_9 <= m2_4 xor m(9);
-		
-	x(14) <= m(10);
-	x(13) <= m(9);
-	x(12) <= m(8);
-	x(11) <= m(7);
-	x(10) <= m(6);
-	x(9) <= m(5);
-	x(8) <= m(4);
-	x(7) <= m(3);
-	x(6) <= m(2);
-	x(5) <= m(1);
-	x(4) <= m(0);
-	x(3) <= mA xor m4_5_8;
-	x(2) <= mA xor m2_3_7;
-	x(1) <= mB xor m3_5_10;
-	x(0) <= mB xor m2_4_9;
-end LogicFunction;
+	xor2_4 : xor2to1 port map(m(2), m(4), m2_4);
+	xor2_4_9 : xor2to1 port map(m2_4, m(9), m2_4_9);
+	
+	xor3 : xor2to1 port map(mA, m4_5_8, x(3));
+	xor2 : xor2to1 port map(mA, m2_3_7, x(2));
+	xor1 : xor2to1 port map(mB, m3_5_10, x(1));
+	xor0 : xor2to1 port map(mB, m2_4_9, x(0));
+end Structural;

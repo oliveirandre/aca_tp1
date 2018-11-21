@@ -1,4 +1,4 @@
-// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
 // Your use of Intel Corporation's design tools, logic functions 
 // and other software and tools, and its AMPP partner logic 
 // functions, and any output files from any of the foregoing 
@@ -6,12 +6,11 @@
 // associated documentation or information are expressly subject 
 // to the terms and conditions of the Intel Program License 
 // Subscription Agreement, the Intel Quartus Prime License Agreement,
-// the Intel MegaCore Function License Agreement, or other 
-// applicable license agreement, including, without limitation, 
-// that your use is for the sole purpose of programming logic 
-// devices manufactured by Intel and sold by Intel or its 
-// authorized distributors.  Please refer to the applicable 
-// agreement for further details.
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
 
 
 // 
@@ -30,10 +29,10 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "Encoder")
-  (DATE "11/20/2018 10:01:48")
+  (DATE "11/21/2018 11:43:37")
   (VENDOR "Altera")
   (PROGRAM "Quartus Prime")
-  (VERSION "Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition")
+  (VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition")
   (DIVIDER .)
   (TIMESCALE 1 ps)
 
@@ -252,7 +251,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE mB\~0)
+    (INSTANCE xor0\|o\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2765:2765:2765) (2938:2938:2938))
@@ -268,7 +267,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE x\~0)
+    (INSTANCE xor0\|o\~1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2864:2864:2864) (3096:3096:3096))
@@ -311,7 +310,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE x\~1)
+    (INSTANCE xor1\|o\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2900:2900:2900) (3094:3094:3094))
@@ -336,7 +335,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE mA\~0)
+    (INSTANCE xor2\|o\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2762:2762:2762) (2936:2936:2936))
@@ -352,7 +351,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE x\~2)
+    (INSTANCE xor2\|o\~1)
     (DELAY
       (ABSOLUTE
         (PORT dataa (193:193:193) (231:231:231))
@@ -368,7 +367,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE x\~3)
+    (INSTANCE xor3\|o\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2864:2864:2864) (3096:3096:3096))
