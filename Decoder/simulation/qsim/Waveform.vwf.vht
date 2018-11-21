@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "11/20/2018 09:38:54"
+-- Generated on "11/21/2018 15:34:53"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          Decoder
 -- 
@@ -34,11 +34,15 @@ END Decoder_vhd_vec_tst;
 ARCHITECTURE Decoder_arch OF Decoder_vhd_vec_tst IS
 -- constants                                                 
 -- signals                                                   
-SIGNAL e : STD_LOGIC_VECTOR(3 DOWNTO 0);
+SIGNAL error : STD_LOGIC_VECTOR(3 DOWNTO 0);
+SIGNAL f : STD_LOGIC_VECTOR(14 DOWNTO 0);
+SIGNAL selector : STD_LOGIC_VECTOR(10 DOWNTO 0);
 SIGNAL y : STD_LOGIC_VECTOR(14 DOWNTO 0);
 COMPONENT Decoder
 	PORT (
-	e : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+	error : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+	f : OUT STD_LOGIC_VECTOR(14 DOWNTO 0);
+	selector : OUT STD_LOGIC_VECTOR(10 DOWNTO 0);
 	y : IN STD_LOGIC_VECTOR(14 DOWNTO 0)
 	);
 END COMPONENT;
@@ -46,7 +50,9 @@ BEGIN
 	i1 : Decoder
 	PORT MAP (
 -- list connections between master ports and signals
-	e => e,
+	error => error,
+	f => f,
+	selector => selector,
 	y => y
 	);
 -- y[14]

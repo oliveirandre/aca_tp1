@@ -45,3 +45,16 @@ begin
 	and3_4 : and2to1 port map (c, d, o2);
 	andfinal : and2to1 port map (o1, o2, o);
 end LogicFunction;
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity mux2to1 is
+	port (a, b, sel : in std_logic;
+			o : out std_logic);
+end mux2to1;
+
+architecture LogicFunction of mux2to1 is
+begin
+	o <= (sel and a) or (not sel and b);
+end LogicFunction;

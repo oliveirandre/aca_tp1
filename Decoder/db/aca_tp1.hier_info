@@ -1,32 +1,84 @@
 |Decoder
 y[0] => xor2to1:xor0_6.a
+y[0] => f[0].DATAIN
 y[1] => xor2to1:xor1_7.a
+y[1] => f[1].DATAIN
 y[2] => xor2to1:xor2_6.a
+y[2] => f[2].DATAIN
 y[3] => xor2to1:xor3_8.a
+y[3] => f[3].DATAIN
 y[4] => xor2to1:xor4_10.a
 y[4] => xor2to1:xor4_5.a
+y[4] => mux2to1:mux4.b
+y[4] => mux2to1:mux4.a
 y[5] => xor2to1:xor4_5.b
+y[5] => mux2to1:mux5.b
+y[5] => mux2to1:mux5.a
 y[6] => xor2to1:xor2_6.b
 y[6] => xor2to1:xor0_6.b
+y[6] => mux2to1:mux6.b
+y[6] => mux2to1:mux6.a
 y[7] => xor2to1:xor7_11.a
 y[7] => xor2to1:xor1_7.b
+y[7] => mux2to1:mux7.b
+y[7] => mux2to1:mux7.a
 y[8] => xor2to1:xor3_8.b
 y[8] => xor2to1:xor8_13.a
+y[8] => mux2to1:mux8.b
+y[8] => mux2to1:mux8.a
 y[9] => xor2to1:xor9_12.a
 y[9] => xor2to1:xor9_14.a
+y[9] => mux2to1:mux9.b
+y[9] => mux2to1:mux9.a
 y[10] => xor2to1:xor4_10.b
+y[10] => mux2to1:mux10.b
+y[10] => mux2to1:mux10.a
 y[11] => xor2to1:xor7_11.b
 y[11] => xor2to1:xor11_12.a
+y[11] => mux2to1:mux11.b
+y[11] => mux2to1:mux11.a
 y[12] => xor2to1:xor9_12.b
 y[12] => xor2to1:xor11_12.b
+y[12] => mux2to1:mux12.b
+y[12] => mux2to1:mux12.a
 y[13] => xor2to1:xor13_14.a
 y[13] => xor2to1:xor8_13.b
+y[13] => mux2to1:mux13.b
+y[13] => mux2to1:mux13.a
 y[14] => xor2to1:xor13_14.b
 y[14] => xor2to1:xor9_14.b
-e[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
-e[1] <= e[1].DB_MAX_OUTPUT_PORT_TYPE
-e[2] <= e[2].DB_MAX_OUTPUT_PORT_TYPE
-e[3] <= e[3].DB_MAX_OUTPUT_PORT_TYPE
+y[14] => mux2to1:mux14.b
+y[14] => mux2to1:mux14.a
+error[0] <= xor2to1:xor0.o
+error[1] <= xor2to1:xor1.o
+error[2] <= xor2to1:xor2.o
+error[3] <= xor2to1:xor3.o
+selector[0] <= and4to1:and0.o
+selector[1] <= and4to1:and1.o
+selector[2] <= and4to1:and2.o
+selector[3] <= and4to1:and3.o
+selector[4] <= and4to1:and4.o
+selector[5] <= and4to1:and5.o
+selector[6] <= and4to1:and6.o
+selector[7] <= and4to1:and7.o
+selector[8] <= and4to1:and8.o
+selector[9] <= and4to1:and9.o
+selector[10] <= and4to1:and10.o
+f[0] <= y[0].DB_MAX_OUTPUT_PORT_TYPE
+f[1] <= y[1].DB_MAX_OUTPUT_PORT_TYPE
+f[2] <= y[2].DB_MAX_OUTPUT_PORT_TYPE
+f[3] <= y[3].DB_MAX_OUTPUT_PORT_TYPE
+f[4] <= mux2to1:mux4.o
+f[5] <= mux2to1:mux5.o
+f[6] <= mux2to1:mux6.o
+f[7] <= mux2to1:mux7.o
+f[8] <= mux2to1:mux8.o
+f[9] <= mux2to1:mux9.o
+f[10] <= mux2to1:mux10.o
+f[11] <= mux2to1:mux11.o
+f[12] <= mux2to1:mux12.o
+f[13] <= mux2to1:mux13.o
+f[14] <= mux2to1:mux14.o
 
 
 |Decoder|xor2to1:xor4_10
@@ -488,6 +540,94 @@ o <= o.DB_MAX_OUTPUT_PORT_TYPE
 |Decoder|and4to1:and0|and2to1:andfinal
 a => o.IN0
 b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|mux2to1:mux14
+a => o.IN0
+b => o.IN0
+sel => o.IN1
+sel => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|mux2to1:mux13
+a => o.IN0
+b => o.IN0
+sel => o.IN1
+sel => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|mux2to1:mux12
+a => o.IN0
+b => o.IN0
+sel => o.IN1
+sel => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|mux2to1:mux11
+a => o.IN0
+b => o.IN0
+sel => o.IN1
+sel => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|mux2to1:mux10
+a => o.IN0
+b => o.IN0
+sel => o.IN1
+sel => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|mux2to1:mux9
+a => o.IN0
+b => o.IN0
+sel => o.IN1
+sel => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|mux2to1:mux8
+a => o.IN0
+b => o.IN0
+sel => o.IN1
+sel => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|mux2to1:mux7
+a => o.IN0
+b => o.IN0
+sel => o.IN1
+sel => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|mux2to1:mux6
+a => o.IN0
+b => o.IN0
+sel => o.IN1
+sel => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|mux2to1:mux5
+a => o.IN0
+b => o.IN0
+sel => o.IN1
+sel => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|mux2to1:mux4
+a => o.IN0
+b => o.IN0
+sel => o.IN1
+sel => o.IN1
 o <= o.DB_MAX_OUTPUT_PORT_TYPE
 
 
