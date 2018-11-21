@@ -1,0 +1,493 @@
+|Decoder
+y[0] => xor2to1:xor0_6.a
+y[1] => xor2to1:xor1_7.a
+y[2] => xor2to1:xor2_6.a
+y[3] => xor2to1:xor3_8.a
+y[4] => xor2to1:xor4_10.a
+y[4] => xor2to1:xor4_5.a
+y[5] => xor2to1:xor4_5.b
+y[6] => xor2to1:xor2_6.b
+y[6] => xor2to1:xor0_6.b
+y[7] => xor2to1:xor7_11.a
+y[7] => xor2to1:xor1_7.b
+y[8] => xor2to1:xor3_8.b
+y[8] => xor2to1:xor8_13.a
+y[9] => xor2to1:xor9_12.a
+y[9] => xor2to1:xor9_14.a
+y[10] => xor2to1:xor4_10.b
+y[11] => xor2to1:xor7_11.b
+y[11] => xor2to1:xor11_12.a
+y[12] => xor2to1:xor9_12.b
+y[12] => xor2to1:xor11_12.b
+y[13] => xor2to1:xor13_14.a
+y[13] => xor2to1:xor8_13.b
+y[14] => xor2to1:xor13_14.b
+y[14] => xor2to1:xor9_14.b
+e[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+e[1] <= e[1].DB_MAX_OUTPUT_PORT_TYPE
+e[2] <= e[2].DB_MAX_OUTPUT_PORT_TYPE
+e[3] <= e[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|xor2to1:xor4_10
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|xor2to1:xor13_14
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|xor2to1:xorA
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|xor2to1:xor3_8
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|xor2to1:xor9_12
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|xor2to1:xor3_8_9_12
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|xor2to1:xor2_6
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|xor2to1:xor7_11
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|xor2to1:xor2_6_7_11
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|xor2to1:xor4_5
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|xor2to1:xor11_12
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|xor2to1:xorB
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|xor2to1:xor1_7
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|xor2to1:xor9_14
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|xor2to1:xor1_7_9_14
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|xor2to1:xor0_6
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|xor2to1:xor8_13
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|xor2to1:xor0_6_8_13
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|xor2to1:xor3
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|xor2to1:xor2
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|xor2to1:xor1
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|xor2to1:xor0
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|and4to1:and10
+a => and2to1:and1_2.a
+b => and2to1:and1_2.b
+c => and2to1:and3_4.a
+d => and2to1:and3_4.b
+o <= and2to1:andfinal.o
+
+
+|Decoder|and4to1:and10|and2to1:and1_2
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|and4to1:and10|and2to1:and3_4
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|and4to1:and10|and2to1:andfinal
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|and4to1:and9
+a => and2to1:and1_2.a
+b => and2to1:and1_2.b
+c => and2to1:and3_4.a
+d => and2to1:and3_4.b
+o <= and2to1:andfinal.o
+
+
+|Decoder|and4to1:and9|and2to1:and1_2
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|and4to1:and9|and2to1:and3_4
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|and4to1:and9|and2to1:andfinal
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|and4to1:and8
+a => and2to1:and1_2.a
+b => and2to1:and1_2.b
+c => and2to1:and3_4.a
+d => and2to1:and3_4.b
+o <= and2to1:andfinal.o
+
+
+|Decoder|and4to1:and8|and2to1:and1_2
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|and4to1:and8|and2to1:and3_4
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|and4to1:and8|and2to1:andfinal
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|and4to1:and7
+a => and2to1:and1_2.a
+b => and2to1:and1_2.b
+c => and2to1:and3_4.a
+d => and2to1:and3_4.b
+o <= and2to1:andfinal.o
+
+
+|Decoder|and4to1:and7|and2to1:and1_2
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|and4to1:and7|and2to1:and3_4
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|and4to1:and7|and2to1:andfinal
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|and4to1:and6
+a => and2to1:and1_2.a
+b => and2to1:and1_2.b
+c => and2to1:and3_4.a
+d => and2to1:and3_4.b
+o <= and2to1:andfinal.o
+
+
+|Decoder|and4to1:and6|and2to1:and1_2
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|and4to1:and6|and2to1:and3_4
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|and4to1:and6|and2to1:andfinal
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|and4to1:and5
+a => and2to1:and1_2.a
+b => and2to1:and1_2.b
+c => and2to1:and3_4.a
+d => and2to1:and3_4.b
+o <= and2to1:andfinal.o
+
+
+|Decoder|and4to1:and5|and2to1:and1_2
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|and4to1:and5|and2to1:and3_4
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|and4to1:and5|and2to1:andfinal
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|and4to1:and4
+a => and2to1:and1_2.a
+b => and2to1:and1_2.b
+c => and2to1:and3_4.a
+d => and2to1:and3_4.b
+o <= and2to1:andfinal.o
+
+
+|Decoder|and4to1:and4|and2to1:and1_2
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|and4to1:and4|and2to1:and3_4
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|and4to1:and4|and2to1:andfinal
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|and4to1:and3
+a => and2to1:and1_2.a
+b => and2to1:and1_2.b
+c => and2to1:and3_4.a
+d => and2to1:and3_4.b
+o <= and2to1:andfinal.o
+
+
+|Decoder|and4to1:and3|and2to1:and1_2
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|and4to1:and3|and2to1:and3_4
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|and4to1:and3|and2to1:andfinal
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|and4to1:and2
+a => and2to1:and1_2.a
+b => and2to1:and1_2.b
+c => and2to1:and3_4.a
+d => and2to1:and3_4.b
+o <= and2to1:andfinal.o
+
+
+|Decoder|and4to1:and2|and2to1:and1_2
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|and4to1:and2|and2to1:and3_4
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|and4to1:and2|and2to1:andfinal
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|and4to1:and1
+a => and2to1:and1_2.a
+b => and2to1:and1_2.b
+c => and2to1:and3_4.a
+d => and2to1:and3_4.b
+o <= and2to1:andfinal.o
+
+
+|Decoder|and4to1:and1|and2to1:and1_2
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|and4to1:and1|and2to1:and3_4
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|and4to1:and1|and2to1:andfinal
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|and4to1:and0
+a => and2to1:and1_2.a
+b => and2to1:and1_2.b
+c => and2to1:and3_4.a
+d => and2to1:and3_4.b
+o <= and2to1:andfinal.o
+
+
+|Decoder|and4to1:and0|and2to1:and1_2
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|and4to1:and0|and2to1:and3_4
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder|and4to1:and0|and2to1:andfinal
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+

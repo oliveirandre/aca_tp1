@@ -1,17 +1,14 @@
-Analysis & Synthesis Status : Successful - Tue Nov 20 09:37:12 2018
-Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Analysis & Synthesis Status : Successful - Wed Nov 21 14:19:15 2018
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : aca_tp1
 Top-level Entity Name : Decoder
-Family : Cyclone V
-Logic utilization (in ALMs) : N/A
+Family : Cyclone IV E
+Total logic elements : 0
+    Total combinational functions : 0
+    Dedicated logic registers : 0
 Total registers : 0
 Total pins : 19
 Total virtual pins : 0
-Total block memory bits : 0
-Total DSP Blocks : 0
-Total HSSI RX PCSs : 0
-Total HSSI PMA RX Deserializers : 0
-Total HSSI TX PCSs : 0
-Total HSSI PMA TX Serializers : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0
-Total DLLs : 0

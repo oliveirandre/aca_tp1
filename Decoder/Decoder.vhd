@@ -16,6 +16,7 @@ end Decoder;
 architecture LogicFunction of Decoder is
 	signal y4_10, y13_14, yA, y3_8, y9_12, y3_8_9_12, y2_6, y7_11, y2_6_7_11 : std_logic;
 	signal y4_5, y11_12, yB, y1_7, y9_14, y1_7_9_14, y0_6, y8_13, y0_6_8_13 : std_logic;
+	signal e3, e2, e1, e0: std_logic;
 	signal sel : std_logic_vector(10 downto 0);
 	
 	component xor2to1
@@ -53,21 +54,21 @@ begin
 	xor8_13 : xor2to1 port map(y(8), y(13), y8_13);
 	xor0_6_8_13 : xor2to1 port map(y0_6, y8_13, y0_6_8_13);
 	
-	xor3 : xor2to1 port map(yA, y3_8_9_12, e(3));
-	xor2 : xor2to1 port map(yA, y2_6_7_11, e(2));
-	xor1 : xor2to1 port map(yB, y1_7_9_14, e(1));
-	xor0 : xor2to1 port map(yB, y0_6_8_13, e(0));
+	xor3 : xor2to1 port map(yA, y3_8_9_12, e3);
+	xor2 : xor2to1 port map(yA, y2_6_7_11, e2);
+	xor1 : xor2to1 port map(yB, y1_7_9_14, e1);
+	xor0 : xor2to1 port map(yB, y0_6_8_13, e0);
 	
 	
-	and10 <= and4to1 port map (e(3), e(2), e(1), not e(0), sel(10));
-	and9 <= and4to1 port map (e(3), e(2), not e(1), e(0), sel(9));
-	and8 <= and4to1 port map (e(3), not e(2), e(1), e(0), sel(8));
-	and7 <= and4to1 port map (not e(3), e(2), e(1), e(0), sel(7));
-	and6 <= and4to1 port map (e(3), e(2), not e(1), not e(0), sel(6));
-	and5 <= and4to1 port map (e(3), not e(2), e(1), not e(0), sel(5));
-	and4 <= and4to1 port map (e(3), not e(2), not e(1), e(0), sel(4));
-	and3 <= and4to1 port map (not e(3), e(2), e(1), not e(0), sel(3));
-	and2 <= and4to1 port map (not e(3), e(2), not e(1), e(0), sel(2));
-	and1 <= and4to1 port map (not e(3), not e(2), e(1), e(0), sel(1));
-	and0 <= and4to1 port map (e(3), e(2), e(1), e(0), sel(0));
+	and10 : and4to1 port map (e3, e2, e1, not e0, sel(10));
+	and9 : and4to1 port map (e3, e2, not e1, e0, sel(9));
+	and8 : and4to1 port map (e3, not e2, e1, e0, sel(8));
+	and7 : and4to1 port map (not e3, e2, e1, e0, sel(7));
+	and6 : and4to1 port map (e3, e2, not e1, not e0, sel(6));
+	and5 : and4to1 port map (e3, not e2, e1, not e0, sel(5));
+	and4 : and4to1 port map (e3, not e2, not e1, e0, sel(4));
+	and3 : and4to1 port map (not e3, e2, e1, not e0, sel(3));
+	and2 : and4to1 port map (not e3, e2, not e1, e0, sel(2));
+	and1 : and4to1 port map (not e3, not e2, e1, e0, sel(1));
+	and0 : and4to1 port map (e3, e2, e1, e0, sel(0));
 end LogicFunction;
