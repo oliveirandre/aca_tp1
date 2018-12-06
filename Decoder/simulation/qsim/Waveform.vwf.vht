@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "11/21/2018 15:34:53"
+-- Generated on "12/03/2018 17:28:25"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          Decoder
 -- 
@@ -76,7 +76,7 @@ END PROCESS t_prcs_y_12;
 -- y[11]
 t_prcs_y_11: PROCESS
 BEGIN
-	y(11) <= '0';
+	y(11) <= '1';
 WAIT;
 END PROCESS t_prcs_y_11;
 -- y[10]
@@ -88,25 +88,25 @@ END PROCESS t_prcs_y_10;
 -- y[9]
 t_prcs_y_9: PROCESS
 BEGIN
-	y(9) <= '0';
+	y(9) <= '1';
 WAIT;
 END PROCESS t_prcs_y_9;
 -- y[8]
 t_prcs_y_8: PROCESS
 BEGIN
-	y(8) <= '0';
+	y(8) <= '1';
 WAIT;
 END PROCESS t_prcs_y_8;
 -- y[7]
 t_prcs_y_7: PROCESS
 BEGIN
-	y(7) <= '0';
+	y(7) <= '1';
 WAIT;
 END PROCESS t_prcs_y_7;
 -- y[6]
 t_prcs_y_6: PROCESS
 BEGIN
-	y(6) <= '0';
+	y(6) <= '1';
 WAIT;
 END PROCESS t_prcs_y_6;
 -- y[5]
@@ -118,13 +118,13 @@ END PROCESS t_prcs_y_5;
 -- y[4]
 t_prcs_y_4: PROCESS
 BEGIN
-	y(4) <= '1';
+	y(4) <= '0';
 WAIT;
 END PROCESS t_prcs_y_4;
 -- y[3]
 t_prcs_y_3: PROCESS
 BEGIN
-	y(3) <= '1';
+	y(3) <= '0';
 WAIT;
 END PROCESS t_prcs_y_3;
 -- y[2]
@@ -136,13 +136,13 @@ END PROCESS t_prcs_y_2;
 -- y[1]
 t_prcs_y_1: PROCESS
 BEGIN
-	y(1) <= '1';
+	y(1) <= '0';
 WAIT;
 END PROCESS t_prcs_y_1;
 -- y[0]
 t_prcs_y_0: PROCESS
 BEGIN
-	y(0) <= '1';
+	y(0) <= '0';
 WAIT;
 END PROCESS t_prcs_y_0;
 END Decoder_arch;

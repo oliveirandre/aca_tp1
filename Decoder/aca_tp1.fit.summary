@@ -1,4 +1,4 @@
-Fitter Status : Successful - Wed Nov 21 15:30:56 2018
+Fitter Status : Successful - Thu Nov 29 16:27:37 2018
 Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 Revision Name : aca_tp1
 Top-level Entity Name : Decoder
@@ -9,7 +9,7 @@ Total logic elements : 32 / 6,272 ( < 1 % )
     Total combinational functions : 32 / 6,272 ( < 1 % )
     Dedicated logic registers : 0 / 6,272 ( 0 % )
 Total registers : 0
-Total pins : 45 / 92 ( 49 % )
+Total pins : 41 / 92 ( 45 % )
 Total virtual pins : 0
 Total memory bits : 0 / 276,480 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )

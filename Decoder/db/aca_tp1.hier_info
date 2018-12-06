@@ -1,12 +1,8 @@
 |Decoder
 y[0] => xor2to1:xor0_6.a
-y[0] => f[0].DATAIN
 y[1] => xor2to1:xor1_7.a
-y[1] => f[1].DATAIN
 y[2] => xor2to1:xor2_6.a
-y[2] => f[2].DATAIN
 y[3] => xor2to1:xor3_8.a
-y[3] => f[3].DATAIN
 y[4] => xor2to1:xor4_10.a
 y[4] => xor2to1:xor4_5.a
 y[4] => mux2to1:mux4.b
@@ -64,21 +60,17 @@ selector[7] <= and4to1:and7.o
 selector[8] <= and4to1:and8.o
 selector[9] <= and4to1:and9.o
 selector[10] <= and4to1:and10.o
-f[0] <= y[0].DB_MAX_OUTPUT_PORT_TYPE
-f[1] <= y[1].DB_MAX_OUTPUT_PORT_TYPE
-f[2] <= y[2].DB_MAX_OUTPUT_PORT_TYPE
-f[3] <= y[3].DB_MAX_OUTPUT_PORT_TYPE
-f[4] <= mux2to1:mux4.o
-f[5] <= mux2to1:mux5.o
-f[6] <= mux2to1:mux6.o
-f[7] <= mux2to1:mux7.o
-f[8] <= mux2to1:mux8.o
-f[9] <= mux2to1:mux9.o
-f[10] <= mux2to1:mux10.o
-f[11] <= mux2to1:mux11.o
-f[12] <= mux2to1:mux12.o
-f[13] <= mux2to1:mux13.o
-f[14] <= mux2to1:mux14.o
+f[0] <= mux2to1:mux4.o
+f[1] <= mux2to1:mux5.o
+f[2] <= mux2to1:mux6.o
+f[3] <= mux2to1:mux7.o
+f[4] <= mux2to1:mux8.o
+f[5] <= mux2to1:mux9.o
+f[6] <= mux2to1:mux10.o
+f[7] <= mux2to1:mux11.o
+f[8] <= mux2to1:mux12.o
+f[9] <= mux2to1:mux13.o
+f[10] <= mux2to1:mux14.o
 
 
 |Decoder|xor2to1:xor4_10

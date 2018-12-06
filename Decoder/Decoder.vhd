@@ -12,7 +12,7 @@ entity Decoder is
 	port (y : in std_logic_vector(14 downto 0);
 			error : out std_logic_vector(3 downto 0);
 			selector : out std_logic_vector(10 downto 0);
-			f : out std_logic_vector(14 downto 0));
+			f : out std_logic_vector(10 downto 0));
 end Decoder;
 
 architecture LogicFunction of Decoder is
@@ -82,19 +82,17 @@ begin
 	
 	selector <= sel;
 	
-	mux14 : mux2to1 port map(not y(14), y(14), sel(10), f(14));
-	mux13 : mux2to1 port map(not y(13), y(13), sel(9), f(13));
-	mux12 : mux2to1 port map(not y(12), y(12), sel(8), f(12));
-	mux11 : mux2to1 port map(not y(11), y(11), sel(7), f(11));
-	mux10 : mux2to1 port map(not y(10), y(10), sel(6), f(10));
-	mux9 : mux2to1 port map(not y(9), y(9), sel(5), f(9));
-	mux8 : mux2to1 port map(not y(8), y(8), sel(4), f(8));
-	mux7 : mux2to1 port map(not y(7), y(7), sel(3), f(7));
-	mux6 : mux2to1 port map(not y(6), y(6), sel(2), f(6));
-	mux5 : mux2to1 port map(not y(5), y(5), sel(1), f(5));
-	mux4 : mux2to1 port map(not y(4), y(4), sel(0), f(4));
-	
-	f(3 downto 0) <= y(3 downto 0);
+	mux14 : mux2to1 port map(not y(14), y(14), sel(10), f(10));
+	mux13 : mux2to1 port map(not y(13), y(13), sel(9), f(9));
+	mux12 : mux2to1 port map(not y(12), y(12), sel(8), f(8));
+	mux11 : mux2to1 port map(not y(11), y(11), sel(7), f(7));
+	mux10 : mux2to1 port map(not y(10), y(10), sel(6), f(6));
+	mux9 : mux2to1 port map(not y(9), y(9), sel(5), f(5));
+	mux8 : mux2to1 port map(not y(8), y(8), sel(4), f(4));
+	mux7 : mux2to1 port map(not y(7), y(7), sel(3), f(3));
+	mux6 : mux2to1 port map(not y(6), y(6), sel(2), f(2));
+	mux5 : mux2to1 port map(not y(5), y(5), sel(1), f(1));
+	mux4 : mux2to1 port map(not y(4), y(4), sel(0), f(0));
 	
 	
 end LogicFunction;

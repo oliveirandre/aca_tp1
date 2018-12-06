@@ -1,4 +1,4 @@
--- Copyright (C) 2018  Intel Corporation. All rights reserved.
+-- Copyright (C) 2017  Intel Corporation. All rights reserved.
 -- Your use of Intel Corporation's design tools, logic functions 
 -- and other software and tools, and its AMPP partner logic 
 -- functions, and any output files from any of the foregoing 
@@ -6,17 +6,18 @@
 -- associated documentation or information are expressly subject 
 -- to the terms and conditions of the Intel Program License 
 -- Subscription Agreement, the Intel Quartus Prime License Agreement,
--- the Intel FPGA IP License Agreement, or other applicable license
--- agreement, including, without limitation, that your use is for
--- the sole purpose of programming logic devices manufactured by
--- Intel and sold by Intel or its authorized distributors.  Please
--- refer to the applicable agreement for further details.
+-- the Intel MegaCore Function License Agreement, or other 
+-- applicable license agreement, including, without limitation, 
+-- that your use is for the sole purpose of programming logic 
+-- devices manufactured by Intel and sold by Intel or its 
+-- authorized distributors.  Please refer to the applicable 
+-- agreement for further details.
 
 -- VENDOR "Altera"
 -- PROGRAM "Quartus Prime"
--- VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
+-- VERSION "Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition"
 
--- DATE "11/21/2018 11:44:53"
+-- DATE "11/29/2018 18:23:22"
 
 -- 
 -- Device: Altera EP4CE6E22C6 Package TQFP144
@@ -77,7 +78,7 @@ USE IEEE.STD_LOGIC_1164.ALL;
 ENTITY 	Encoder IS
     PORT (
 	m : IN std_logic_vector(10 DOWNTO 0);
-	x : BUFFER std_logic_vector(14 DOWNTO 0)
+	x : OUT std_logic_vector(14 DOWNTO 0)
 	);
 END Encoder;
 

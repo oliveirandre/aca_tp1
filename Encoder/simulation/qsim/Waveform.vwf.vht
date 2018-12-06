@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "11/20/2018 10:01:54"
+-- Generated on "11/29/2018 18:23:21"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          Encoder
 -- 
@@ -70,7 +70,7 @@ END PROCESS t_prcs_m_8;
 -- m[7]
 t_prcs_m_7: PROCESS
 BEGIN
-	m(7) <= '0';
+	m(7) <= '1';
 WAIT;
 END PROCESS t_prcs_m_7;
 -- m[6]
@@ -82,37 +82,37 @@ END PROCESS t_prcs_m_6;
 -- m[5]
 t_prcs_m_5: PROCESS
 BEGIN
-	m(5) <= '0';
+	m(5) <= '1';
 WAIT;
 END PROCESS t_prcs_m_5;
 -- m[4]
 t_prcs_m_4: PROCESS
 BEGIN
-	m(4) <= '0';
+	m(4) <= '1';
 WAIT;
 END PROCESS t_prcs_m_4;
 -- m[3]
 t_prcs_m_3: PROCESS
 BEGIN
-	m(3) <= '0';
+	m(3) <= '1';
 WAIT;
 END PROCESS t_prcs_m_3;
 -- m[2]
 t_prcs_m_2: PROCESS
 BEGIN
-	m(2) <= '0';
+	m(2) <= '1';
 WAIT;
 END PROCESS t_prcs_m_2;
 -- m[1]
 t_prcs_m_1: PROCESS
 BEGIN
-	m(1) <= '1';
+	m(1) <= '0';
 WAIT;
 END PROCESS t_prcs_m_1;
 -- m[0]
 t_prcs_m_0: PROCESS
 BEGIN
-	m(0) <= '1';
+	m(0) <= '0';
 WAIT;
 END PROCESS t_prcs_m_0;
 END Encoder_arch;

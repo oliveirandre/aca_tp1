@@ -30,21 +30,21 @@ m[9] => x[13].DATAIN
 m[10] => xor2to1:xor9_10.b
 m[10] => xor2to1:xor3_5_10.b
 m[10] => x[14].DATAIN
-x[0] << xor2to1:xor0.o
-x[1] << xor2to1:xor1.o
-x[2] << xor2to1:xor2.o
-x[3] << xor2to1:xor3.o
-x[4] << m[0].DB_MAX_OUTPUT_PORT_TYPE
-x[5] << m[1].DB_MAX_OUTPUT_PORT_TYPE
-x[6] << m[2].DB_MAX_OUTPUT_PORT_TYPE
-x[7] << m[3].DB_MAX_OUTPUT_PORT_TYPE
-x[8] << m[4].DB_MAX_OUTPUT_PORT_TYPE
-x[9] << m[5].DB_MAX_OUTPUT_PORT_TYPE
-x[10] << m[6].DB_MAX_OUTPUT_PORT_TYPE
-x[11] << m[7].DB_MAX_OUTPUT_PORT_TYPE
-x[12] << m[8].DB_MAX_OUTPUT_PORT_TYPE
-x[13] << m[9].DB_MAX_OUTPUT_PORT_TYPE
-x[14] << m[10].DB_MAX_OUTPUT_PORT_TYPE
+x[0] <= xor2to1:xor0.o
+x[1] <= xor2to1:xor1.o
+x[2] <= xor2to1:xor2.o
+x[3] <= xor2to1:xor3.o
+x[4] <= m[0].DB_MAX_OUTPUT_PORT_TYPE
+x[5] <= m[1].DB_MAX_OUTPUT_PORT_TYPE
+x[6] <= m[2].DB_MAX_OUTPUT_PORT_TYPE
+x[7] <= m[3].DB_MAX_OUTPUT_PORT_TYPE
+x[8] <= m[4].DB_MAX_OUTPUT_PORT_TYPE
+x[9] <= m[5].DB_MAX_OUTPUT_PORT_TYPE
+x[10] <= m[6].DB_MAX_OUTPUT_PORT_TYPE
+x[11] <= m[7].DB_MAX_OUTPUT_PORT_TYPE
+x[12] <= m[8].DB_MAX_OUTPUT_PORT_TYPE
+x[13] <= m[9].DB_MAX_OUTPUT_PORT_TYPE
+x[14] <= m[10].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Encoder|xor2to1:xor0_6

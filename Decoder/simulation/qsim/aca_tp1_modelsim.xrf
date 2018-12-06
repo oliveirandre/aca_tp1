@@ -1,11 +1,12 @@
 vendor_name = ModelSim
-source_file = 1, /home/pedro/Repositories/aca_tp1/Decoder/Decoder.vhd
-source_file = 1, /home/pedro/Repositories/aca_tp1/Decoder/myDecoder.vhd
+source_file = 1, /home/pedro/Documents/aca_tp1/Decoder/Decoder.vhd
+source_file = 1, /home/pedro/Documents/aca_tp1/Decoder/myDecoder.vhd
+source_file = 1, /home/pedro/Documents/aca_tp1/Decoder/Waveform.vwf
 source_file = 1, /home/pedro/intelFPGA_lite/17.0/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, /home/pedro/intelFPGA_lite/17.0/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, /home/pedro/intelFPGA_lite/17.0/quartus/libraries/vhdl/ieee/timing_b.vhd
 source_file = 1, /home/pedro/intelFPGA_lite/17.0/quartus/libraries/vhdl/ieee/timing_p.vhd
-source_file = 1, /home/pedro/Repositories/aca_tp1/Decoder/db/aca_tp1.cbx.xml
+source_file = 1, /home/pedro/Documents/aca_tp1/Decoder/db/aca_tp1.cbx.xml
 design_name = hard_block
 design_name = Decoder
 instance = comp, \error[0]~output\, error[0]~output, Decoder, 1

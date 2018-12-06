@@ -1,5 +1,5 @@
 Analysis & Synthesis report for aca_tp1
-Wed Nov 21 15:30:52 2018
+Thu Nov 29 16:27:25 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov 21 15:30:52 2018       ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 29 16:27:25 2018       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; aca_tp1                                     ;
 ; Top-level Entity Name              ; Decoder                                     ;
@@ -52,7 +52,7 @@ agreement for further details.
 ;     Total combinational functions  ; 32                                          ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 45                                          ;
+; Total pins                         ; 41                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -192,14 +192,14 @@ agreement for further details.
 ;     -- Dedicated logic registers            ; 0                ;
 ;     -- I/O registers                        ; 0                ;
 ;                                             ;                  ;
-; I/O pins                                    ; 45               ;
+; I/O pins                                    ; 41               ;
 ;                                             ;                  ;
 ; Embedded Multiplier 9-bit elements          ; 0                ;
 ;                                             ;                  ;
 ; Maximum fan-out node                        ; xor2to1:xor0|o~2 ;
 ; Maximum fan-out                             ; 12               ;
-; Total fan-out                               ; 173              ;
-; Average fan-out                             ; 1.42             ;
+; Total fan-out                               ; 165              ;
+; Average fan-out                             ; 1.45             ;
 +---------------------------------------------+------------------+
 
 
@@ -208,7 +208,7 @@ agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                     ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------+-------------+--------------+
-; |Decoder                   ; 32 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 45   ; 0            ; |Decoder                                ; Decoder     ; work         ;
+; |Decoder                   ; 32 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 41   ; 0            ; |Decoder                                ; Decoder     ; work         ;
 ;    |and4to1:and0|          ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Decoder|and4to1:and0                   ; and4to1     ; work         ;
 ;       |and2to1:andfinal|   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Decoder|and4to1:and0|and2to1:andfinal  ; and2to1     ; work         ;
 ;    |and4to1:and10|         ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Decoder|and4to1:and10                  ; and4to1     ; work         ;
@@ -270,7 +270,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 45                          ;
+; boundary_port         ; 41                          ;
 ; cycloneiii_lcell_comb ; 32                          ;
 ;     normal            ; 32                          ;
 ;         2 data inputs ; 15                          ;
@@ -286,7 +286,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -296,7 +296,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Nov 21 15:30:41 2018
+    Info: Processing started: Thu Nov 29 16:27:04 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Decoder -c aca_tp1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -320,14 +320,14 @@ Info (12128): Elaborating entity "mux2to1" for hierarchy "mux2to1:mux14" File: /
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 77 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 73 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
-    Info (21059): Implemented 30 output pins
+    Info (21059): Implemented 26 output pins
     Info (21061): Implemented 32 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 976 megabytes
-    Info: Processing ended: Wed Nov 21 15:30:52 2018
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:26
+    Info: Processing ended: Thu Nov 29 16:27:25 2018
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:45
 
 
